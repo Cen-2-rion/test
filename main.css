@@ -1,0 +1,69 @@
+body {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  max-width: 580px;
+  height: auto;
+  background-color:#f8f8f8cd;
+  margin: 20px;
+}
+
+.collapse-container {
+  padding: 28px;
+}
+
+.collapse-btn {
+  min-width: 85px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #007bff;
+  color: #f4f1f1;
+  font-size: inherit;
+  border: none;
+  border-radius: 5px;
+  user-select: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+.collapse-btn:hover {
+  background-color: #006bde;
+}
+
+.collapse-btn.active {
+  box-shadow: #7bbbff 0 0 0 3px;
+}
+
+.collapse-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+
+.content-box {
+  padding: 20px;
+  color: #3f3f3f;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.copy {
+  margin: 0 15px 10px 0;
+  font-size: 13px;
+  color: gray;
+  cursor: pointer;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
